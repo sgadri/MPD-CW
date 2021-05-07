@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="orange">#FF5722</color>
+    <color name="grey">#807979</color>
+    <color name="tranparent">#00FFFFFF</color>
+    <color name="whitee">#FFFFFF</color>
+    <color name="buttomColor">#2D3862</color>
+    <color name="buttonDown">#292929</color>
+    <color name="dot">#EC1E00</color>
+    <color name="dim">#000000</color>
+    <color name="dim1">#000000</color>
+    <color name="green">#4CAF50</color>
+    <color name="yello">#641AAD</color>
+    <color name="cell_color">#303A46</color>
+    <color name="accentTowColor">#585C67</color>
+    <color name="title_faq">#25203c</color>
+    <color name="body_faq">#49436A</color>
+    <color name="violet">#4b1ca7</color>
+    <color name="yellow">#F8BD32</color>
+    <color name="red_up">#05fbfa</color>
+    <color name="cell_new_color">#7E4AE5</color>
+    <color name="colorAccentDark">#037e7d</color>
+
+    <color name="background">#000000</color>
+    <color name="black_tr">#000000</color>
+    <color name="cell_all">#2E2E2E</color>
+
+    <color name="grayLight">#88898C</color>
+
+
+    <integer-array name="androidcolors">
+        <item>@color/dot</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+
+    </integer-array>
+</resources>

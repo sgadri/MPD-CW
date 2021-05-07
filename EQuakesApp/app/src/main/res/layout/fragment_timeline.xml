@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_marginBottom="11mm">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            android:padding="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_view_on_list_item_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:id="@+id/name_of_city_txt"
+                        android:text="SAN JUAN"/>
+                    <TextView
+                        android:id="@+id/city_loc_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:textSize="18sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="-------------------------------------------------------------------------------"/>
+
+                </LinearLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Magnitude:"
+                        android:layout_gravity="left"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black_tr"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/magnitude_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="2.8"
+                        android:textColor="@color/black_tr"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:id="@+id/a3"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:layout_gravity="right"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:visibility="invisible"
+                        android:text="----------"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/a4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Depth:"
+                        android:textSize="18sp"
+                        android:layout_gravity="left"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black_tr" />
+                    <TextView
+                        android:id="@+id/depth_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="90.0 km"
+                        android:textSize="18sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:id="@+id/ago_time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="----------"
+                        android:visibility="invisible"
+                        android:layout_gravity="right"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/a7"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="Date, Time:"
+                        android:layout_gravity="left"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/origin_time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:textSize="18sp"
+                        android:layout_gravity="left"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="Mar 9 2020 at 1:10:46 PM"/>
+                    <TextView
+                        android:id="@+id/gmt_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:visibility="invisible"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="----------"
+                        android:layout_gravity="right"
+                        android:textSize="18sp"/>
+
+
+
+                </GridLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/item_detail_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textSize="11dp"
+                        android:textColor="@color/black_tr"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="Lat/Long : "/>
+
+                    <TextView
+                        android:id="@+id/item_detail_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_tr"
+                        android:layout_toRightOf="@+id/item_detail_txt1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="----------"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</RelativeLayout>

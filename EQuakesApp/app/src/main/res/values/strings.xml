@@ -1,0 +1,9 @@
+<resources>
+
+
+    <string name="app_name">S1803436</string>
+    <string name="title_activity_main_earthquake_display">MainEarthquakeDisplay</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
